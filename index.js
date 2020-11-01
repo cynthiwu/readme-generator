@@ -32,8 +32,8 @@ const questions = [
     },
     {
         type: "input",
-        message: "List out the technologies used to build this project.",
-        name: "builtwith",
+        message: "What TECHNOLOGIES did you use to build the project?",
+        name: "built-with",
     },
     {
         type: "input",
@@ -59,11 +59,11 @@ const questions = [
             "Boost Software 1.0",
             "The Unlicense",
             "None",
-        ]
+        ],
     },
     {
         type: "input",
-        message: "What is your GitHub username?",
+        message: "What is your GitHub username? (Do NOT include '@')",
         name: "username",
     },
     {
@@ -76,7 +76,6 @@ const questions = [
         message: "What is the URL to view the project live?",
         name: "live",
     },
-
 ];
 
 // function to write README file. Will be specifiying where this goes. 
@@ -91,8 +90,10 @@ function init() {
     inquirer.prompt(questions).then(response => {
         console.log(response);
         writeToFile("README.md", generateMarkdown(response));
+      
     })
 }
 
 // function call to initialize program
 init();
+
