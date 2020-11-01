@@ -1,3 +1,5 @@
+//Function to create the img src link//
+
 function badge(license) {
   if (license === "None") {
     return "";
@@ -6,12 +8,67 @@ function badge(license) {
   return `![github license](https://img.shields.io/badge/license-${license.split(" ").join("-")}-blue.svg)`
 }
 
-// function to generate markdown for README
+
+
+
+// Function to generate markdown content for README
 function generateMarkdown(data) {
+
   return `# ${data.title}
   ${badge(data.license)}
-  
-Content
+   
+  Explore the [project page](${data.repository})
+
+  View it live on [github-pages](${data.live})
+
+  ## Table of Contents
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+    - [Demo](#demo)
+  - Built With(#built-with)
+  - Contributing(#contributing)
+  - Tests(#tests)
+  - License(#license)
+  - Contact(#contact)
+
+  ## Description
+
+  ${data.description}
+
+  ## Installation
+
+  ${data.installation}
+
+  ## Usage 
+
+  ${data.usage}
+
+  ### Demo
+
+  Watch the demonstration to see how this project works
+
+  ![Project Demo](${data.gif})
+
+  ## Built With
+
+  This project was built using:
+
+  ${data.builtwith}
+
+
+  ## Contributing
+
+  ${data.contribution}
+
+  ## Tests
+
+  ${data.tests}
+
+  ## Contact
+
+  **GitHub**: 
+
 
 
 `;
