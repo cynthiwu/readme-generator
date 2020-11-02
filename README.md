@@ -69,6 +69,8 @@ Watch the video below to see how the quiz works.
 
 ![README Generator Demo](./assets/readme.gif)
 
+[Demo Video](./assets/readme.mp4)
+
 ## Roadmap
 
 I will be continuing to build out this project to provide a README template that is usable for all types of projects.
