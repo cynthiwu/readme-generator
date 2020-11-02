@@ -1,5 +1,5 @@
 
-//Function to create the img src link//
+//function to create the img src link//
 
 const badgeShorts = 
   {
@@ -36,7 +36,7 @@ function badge(license) {
   return `![github license](https://img.shields.io/badge/license-${badgeShorts.src[i]}.svg)`
 };
 
-// Function to generate markdown content for README
+// function to generate markdown content for README //
 function generateMarkdown(data) {
 
   return `# ${data.title}
