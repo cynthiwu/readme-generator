@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const generateMarkdown = require("./utils/generateMarkdown")
 
-// Array of questions for user. //
+// Array of questions for user //
 const questions = [
     {
         type: "input",
@@ -50,14 +50,14 @@ const questions = [
         message: "Select a license to cover your project.",
         name: "license",
         choices: [
-            "GNU AGPLv3",
-            "GNU GPLv3",
-            "GNU LGPLv3",
-            "Mozilla Public 2.0",
-            "Apache 2.0",
-            "MIT",
-            "Boost Software 1.0",
-            "The Unlicense",
+            {name: "GNU AGPLv3", value: "AGPL%20v3-blue"},
+            {name: "GNU GPLv3", value: "GPLv3-blue"},
+            {name: "GNU LGPLv3", value: "LGPL%20v3-blue"},
+            {name: "Mozilla Public 2.0", value: "MPL%202.0-brightgreen"},
+            {name: "Apache 2.0", value: "Apache%202.0-blue"},
+            {name: "MIT",value: "MIT-yellow"},
+            {name: "Boost Software 1.0", value: "Boost%201.0-lightblue"},
+            {name: "The Unlicense", value: "Unlicense-blue"},
             "None",
         ],
     },
@@ -81,7 +81,12 @@ const questions = [
 // function to write README file //
 function writeToFile(fileName, data) {
 
-    return fs.writeFileSync(path.join("./created", fileName), data);
+    return fs.writeFileSync(path.join("./created", fileName), data, err => {
+        if (err) {
+            console.log(err);
+            return
+        }
+    });
 
 }
 

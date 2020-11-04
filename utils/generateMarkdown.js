@@ -1,31 +1,6 @@
 
 //function to create the img src link//
 
-const badgeShorts = 
-  {
-    choices: [
-      "GNU AGPLv3",
-      "GNU GPLv3",
-      "GNU LGPLv3",
-      "Mozilla Public 2.0",
-      "Apache 2.0",
-      "MIT",
-      "Boost Software 1.0",
-      "The Unlicense",
-      "None",
-    ],
-    src: [
-      "AGPL%20v3-blue",
-      "GPLv3-blue",
-      "LGPL%20v3-blue",
-      "MPL%202.0-brightgreen",
-      "Apache%202.0-blue",
-      "MIT-yellow",
-      "Boost%201.0-lightblue",
-      "Unlicense-blue",
-    ]
-  };
-
 function badge(license) {
   
   let i = badgeShorts.choices.indexOf(license);
@@ -33,7 +8,7 @@ function badge(license) {
     return "";
   }
 
-  return `![github license](https://img.shields.io/badge/license-${badgeShorts.src[i]}.svg)`
+  return `![github license](https://img.shields.io/badge/license-${license}.svg)`
 };
 
 // function to generate markdown content for README //

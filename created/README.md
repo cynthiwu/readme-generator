@@ -1,9 +1,9 @@
-# Example Project Title
-  ![github license](https://img.shields.io/badge/license-AGPL%20v3-blue.svg)
+# 
+  ![github license](https://img.shields.io/badge/license-LGPL%20v3-blue.svg)
    
   Explore the [project page](undefined)
 
-  View it live on [github-pages](URL)
+  View it live on [github-pages]()
 
   ## Table of Contents
   - [Description](#description)
@@ -18,15 +18,15 @@
 
   ## Description
 
-  This is an example project description. 
+  
 
   ## Installation
 
-  Example installation instructions here
+  
 
   ## Usage 
 
-  Usage examples here
+  
 
   ### Demo
 
@@ -43,13 +43,13 @@
 
   ## Contributing
 
-  How can others contribute to this project? Explanation goes here.
+  
 
   ## Tests
 
-  Tests instructions here.
+  
 
   ## Follow
 
-  **GitHub**: [https://github.com/GitHub Username](https://github.com/GitHub Username)
+  **GitHub**: [https://github.com/](https://github.com/)
 
