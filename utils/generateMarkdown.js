@@ -3,7 +3,6 @@
 
 function badge(license) {
   
-  let i = badgeShorts.choices.indexOf(license);
   if (license === "None") {
     return "";
   }
